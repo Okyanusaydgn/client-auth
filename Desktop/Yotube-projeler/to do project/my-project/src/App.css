@@ -1,0 +1,79 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #8e24aa; /* Sayfa arka planını tamamen mor yapar */
+  color: #fff; /* Yazı rengini beyaza ayarlar */
+}
+
+.App {
+  padding: 20px;
+}
+
+.TodoWrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #673ab7; /* Kutucuk rengini koyu mor yapıyoruz */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.TodoForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  background: transparent; /* Input arka planını açık yapar */
+  color: #fff; /* Input yazı rengini beyaza ayarlar */
+}
+
+.todo-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #8e24aa; /* Görev kutucuğunun rengini açık mor yapar */
+}
+
+.Todo p {
+  flex: 1;
+  margin: 0;
+}
+
+.Todo div {
+  display: flex;
+  gap: 10px;
+}
+
+.Todo p {
+  flex: 1;
+  margin: 0;
+  color: #fff; /* Görev metninin yazı rengini beyaza ayarlar */
+  cursor: pointer; /* Göreve tıklanabilir bir görünüm ekler */
+}
+
+/* Tamamlanmış görevlerin stillemesi */
+.Todo.completed p {
+  text-decoration: line-through; /* Görev tamamlandığında altı çizili yapar */
+  color: #ccc; /* Tamamlanan görevlerin metin rengini gri yapar */
+}
